@@ -31,7 +31,7 @@ config = _.merge({}, {
 	SECRET_KEY: process.env.SECRET_KEY || 'a stong secret key',
 	DB_OPTIONS: { dialect: 'postgres' },
 	LOG_LEVEL: process.env.LOG_LEVEL || 'INFO',
-	DB_URL: process.env.DB_URL || 'postgres://localhost:5432/node-api',
+	DB_URL: process.env.DB_URL || 'postgres://localhost:5432/foth-api',
 }, config);
 
 const loggerTransports = [new winston.transports.Console()]
